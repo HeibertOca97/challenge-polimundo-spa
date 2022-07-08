@@ -2,14 +2,25 @@
 // These can be imported from other files
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../pages/Home.vue';
-import FlightSearch from '../pages/FlightSearch.vue';
+
 
 // 2. Define some routes
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/', component: Home, name: 'Home' },
-  { path: '/flight-search', component: FlightSearch, name:'FlightSearch' },
+  { 
+    path: '/', 
+    component: Home, 
+    name: 'Home', 
+    children: [
+      { 
+        path: '/flight-search', 
+        component: () => import('../components/ContainerTicket.vue'), 
+        name:'FlightSearch' 
+      },
+    ]
+  },
+
 ]
 
 // 3. Create the router instance and pass the `routes` option

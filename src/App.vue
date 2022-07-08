@@ -1,24 +1,18 @@
 <template>
   <v-app>
-    <v-main>
+    <v-app-bar>
+      <v-app-bar-title>Vuelos.com</v-app-bar-title>
+      <v-btn to="/">Home</v-btn>
+    </v-app-bar>
+    <v-main app>
       <router-view/>
-      <HelloWorld/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
 }
 </script>

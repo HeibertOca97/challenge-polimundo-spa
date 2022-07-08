@@ -16,4 +16,10 @@ NOTA: Es muy importante que sigas los estándares y estilo de código presentado
 I do this so I can continue the challenge.
 I had some trouble trying to go from Vue V3 to V2 when creating this project with Vite. That's why I decided to work with the latest version currently.
 
+## Web Design Images
+
+![](https://res.cloudinary.com/heibertoca97/image/upload/v1657260015/challenge/formulario_busqueda_nuioeh.png)
+
+![](https://res.cloudinary.com/heibertoca97/image/upload/v1657260015/challenge/seccion_ticket_johpl2.png)
+
 
